@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ian Bennedick L. Retuta | Portfolio</title>
+
+  <meta name="description" content="Portfolio of Ian Bennedick L. Retuta, Computer Science graduate specializing in Web Development, UI/UX Design, AI, Data Science, and database-driven systems.">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo"><span class="typing-text">Ian</span><span class="typing-dot">.</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="resume.pdf" download class="resume-link">Resume</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="name-highlight">Ian Bennedick Lim</span></h1>
+          <h2>Computer Science Graduate | Web Developer | AI & Data Science Enthusiast</h2>
+
+          <p class="hero-description">
+            I'm a Computer Science graduate from Saint Louis University with hands-on experience in web development, UI/UX design, and AI/Data Science. I build practical digital solutions and contribute to open-source projects.
+          </p>
+
+          <div id="contact" class="hero-contact-info">
+            <h3>Contact Information</h3>
+            <p>I am open to collaboration, internships, entry-level software roles, and project opportunities related to web development, UI/UX, AI, and data systems.</p>
+            
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <a href="mailto:ianbennedick10@gmail.com">ianbennedick10@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">🔗</span>
+                <a href="https://github.com/Ianzzkieee" target="_blank">GitHub</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <a href="https://www.linkedin.com/in/ianzzkieee/" target="_blank">LinkedIn</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <span>Metro Manila, Philippines</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">Projects and Experiences</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="project%20images/myprofile.jpg" alt="Profile photo of Ian Bennedick L. Retuta">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p>About Me</p>
+        <h2>Building practical digital solutions</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Who I Am</h3>
+          <p>
+            I am focused on creating web applications, chatbot systems, and data-driven tools.
+            My academic and project experience includes software development, database systems,
+            UI/UX design, AI, NLP, and research-based solutions.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Education</h3>
+          <p>
+            <strong>Bachelor of Science in Computer Science</strong><br>
+            Saint Louis University
+          </p>
+
+          <p>
+            Relevant areas: Software Development, Web Technologies, Database Systems,
+            Artificial Intelligence, Data Science, and Human-Computer Interaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p>Skills</p>
+        <h2>Technical Toolbox</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>Java, Python, JavaScript, C++</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, Node.js, Bootstrap</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Database</h3>
+          <p>MySQL, SQL, Database Design</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>AI & Data Science</h3>
+          <p>Pandas, Scikit-learn, NLP, RAG, Topic Modeling</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Design Tools</h3>
+          <p>Figma, Canva, UI/UX Wireframing</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Development Tools</h3>
+          <p>GitHub, VS Code, Google Colab, Docker</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p>Projects</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="ai">AI / Data Science</button>
+        <button class="filter-btn" data-filter="network">Networking</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="web">
+          <div class="project-content">
+            <h3>SLU Information Web Application</h3>
+            <p>
+              <strong>Problem:</strong> Students struggled to find real-time information about university programs and services.<br>
+              <strong>Solution:</strong> Built a web application with an AI chatbot for instant Q&A.<br>
+              <strong>Role:</strong> Full-stack developer (frontend & backend integration)
+            </p>
+
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>Node.js</span>
+              <span>JavaScript</span>
+              <span>SQL</span>
+              <span>Chatbot</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="network">
+          <div class="project-content">
+            <h3>World Plaza Tower Terminal Project</h3>
+            <p>
+              <strong>Problem:</strong> Design a secure, scalable network for a 27-story corporate tower.<br>
+              <strong>Solution:</strong> Architected advanced network infrastructure with security protocols and 3D server modeling.<br>
+              <strong>Role:</strong> Network architect and infrastructure lead
+            </p>
+
+            <div class="tags">
+              <span>Cisco Packet Tracer</span>
+              <span>Network Design</span>
+              <span>Security</span>
+              <span>Agile</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank">Details</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-content">
+            <h3>Wordy Game</h3>
+            <p>
+              <strong>Problem:</strong> Need for an interactive multiplayer word game with client-server architecture.<br>
+              <strong>Solution:</strong> Developed a real-time word game using JavaFX UI and CORBA for distributed communication.<br>
+              <strong>Role:</strong> Full-stack developer (UI, logic, and server communication)
+            </p>
+
+            <div class="tags">
+              <span>JavaFX</span>
+              <span>Python</span>
+              <span>CORBA</span>
+              <span>Client-Server</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank">Details</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ai">
+          <div class="project-content">
+            <h3>RAG-Enhanced Chatbot for Event Management SMEs</h3>
+            <p>
+              <strong>Problem:</strong> Event management professionals need intelligent question-answering systems tailored to their domain.<br>
+              <strong>Solution:</strong> Implemented a retrieval-augmented generation (RAG) chatbot with 4 transformer model comparisons (T5, BART, GPT-2, Qwen 2.5).<br>
+              <strong>Role:</strong> NLP researcher and model evaluator
+            </p>
+
+            <div class="tags">
+              <span>NLP</span>
+              <span>RAG</span>
+              <span>Transformer Models</span>
+              <span>Python</span>
+              <span>Research</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank">Details</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ai">
+          <div class="project-content">
+            <h3>Legal Literacy Framework for Filipino Migrant Workers</h3>
+            <p>
+              <strong>Problem:</strong> Filipino migrant workers struggle to understand complex Hong Kong labor laws in their language.<br>
+              <strong>Solution:</strong> Built an intelligent legal information system with semantic routing, topic modeling, and RAG-based retrieval.<br>
+              <strong>Role:</strong> Legal NLP engineer and framework architect
+            </p>
+
+            <div class="tags">
+              <span>Legal NLP</span>
+              <span>RAG</span>
+              <span>LDA Topic Modeling</span>
+              <span>LLM Evaluation</span>
+              <span>Semantic Routing</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank">Details</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-content">
+            <h3>Gig Ticketing and Management System</h3>
+            <p>
+              <strong>Problem:</strong> Event ticketing and gig management platforms lack intuitive user interfaces and scalable data models.<br>
+              <strong>Solution:</strong> Designed and built a full-stack application with responsive UI, comprehensive database schema, and ticketing logic.<br>
+              <strong>Role:</strong> UI/UX Designer and Database Architect
+            </p>
+
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>Java</span>
+              <span>SQL</span>
+              <span>UI/UX Design</span>
+              <span>Database Design</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" target="_blank">Details</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p>Experience</p>
+        <h2>Work Experience</h2>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3>NOAH Business Applications - SLU Internship</h3>
+            <span class="experience-year">2025</span>
+          </div>
+          <ul class="experience-list">
+            <li><strong>System Testing:</strong> Performed comprehensive QA testing for CDCD environment modules, identifying and documenting critical bugs and edge cases.</li>
+            <li><strong>Test Automation:</strong> Tested and documented BRSS test scripts to verify system functionality, ensuring test coverage for business rule scenarios.</li>
+            <li><strong>API Testing:</strong> Conducted API testing and prepared validation documentation for ledger report generation and financial data integrity.</li>
+            <li><strong>Documentation:</strong> Created detailed technical documentation for test cases, bug reports, and system behavior patterns to support team knowledge sharing.</li>
+            <li><strong>Cross-functional Collaboration:</strong> Worked with development and business teams to understand requirements and validate system behavior against business logic.</li>
+            <li><strong>Tools & Technologies:</strong> Used SOAP UI, Postman, and custom testing frameworks to validate API endpoints and system integrations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Ian Bennedick L. Retuta. All rights reserved.</p>
+    <p>Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
